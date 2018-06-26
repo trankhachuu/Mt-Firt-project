@@ -26,6 +26,7 @@ namespace QLBanHang.DAL
         public Nullable<bool> GIOITINH { get; set; }
         public string SDT { get; set; }
         public Nullable<System.DateTime> NGAYSINH { get; set; }
+        public Nullable<bool> ISNHANVIEN { get; set; }
     
         public virtual ICollection<KHACHHANG> KHACHHANG { get; set; }
         public virtual ICollection<NHANVIEN> NHANVIEN { get; set; }

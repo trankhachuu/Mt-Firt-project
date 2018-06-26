@@ -20,11 +20,13 @@ namespace QLBanHang.DAL
         }
     
         public long MAHOADON { get; set; }
-        public Nullable<long> MANHANVIEN { get; set; }
+        public long MANHANVIEN { get; set; }
         public Nullable<long> MAKH { get; set; }
-        public Nullable<double> TONGTIEN { get; set; }
+        public double TONGTIEN { get; set; }
         public System.DateTime NGAYLAP { get; set; }
         public byte TINHTRANG { get; set; }
+        public Nullable<double> TIENKHACHTRA { get; set; }
+        public Nullable<double> TIENTRALAIKHACH { get; set; }
     
         public virtual ICollection<CTHOADON> CTHOADON { get; set; }
         public virtual KHACHHANG KHACHHANG { get; set; }

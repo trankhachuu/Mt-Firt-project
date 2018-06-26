@@ -71,9 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\Func_BanHang.cs" />
+    <Compile Include="BUS\Func_Home.cs" />
+    <Compile Include="BUS\Func_TaiKhoan.cs" />
     <Compile Include="DAL\CTHOADON.cs">
       <DependentUpon>QuanLyBanHang.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DonHangNew.cs" />
     <Compile Include="DAL\HANG.cs">
       <DependentUpon>QuanLyBanHang.tt</DependentUpon>
     </Compile>
@@ -117,7 +120,7 @@
     <Compile Include="DAL\TAIKHOAN.cs">
       <DependentUpon>QuanLyBanHang.tt</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Dictionary.cs" />
+    <Compile Include="DAL\ThongTinKhachHang.cs" />
     <Compile Include="GUI\frm_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +133,18 @@
     <Compile Include="GUI\frm_Home.Designer.cs">
       <DependentUpon>frm_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_KhachHang.Designer.cs">
+      <DependentUpon>frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TraHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TraHang.Designer.cs">
+      <DependentUpon>frm_TraHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frm_BanHang.resx">
@@ -137,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_Home.resx">
       <DependentUpon>frm_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_KhachHang.resx">
+      <DependentUpon>frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TraHang.resx">
+      <DependentUpon>frm_TraHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,6 +188,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\QLBanHang.DAL.InfoHoaDon.datasource" />
+    <None Include="Properties\DataSources\QLBanHang.DAL.ThongTinKhachHang.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

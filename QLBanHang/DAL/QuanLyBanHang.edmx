@@ -32,11 +32,13 @@
             <PropertyRef Name="MAHOADON" />
           </Key>
           <Property Name="MAHOADON" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="MANHANVIEN" Type="bigint" />
+          <Property Name="MANHANVIEN" Type="bigint" Nullable="false" />
           <Property Name="MAKH" Type="bigint" />
-          <Property Name="TONGTIEN" Type="float" />
+          <Property Name="TONGTIEN" Type="float" Nullable="false" />
           <Property Name="NGAYLAP" Type="datetime" Nullable="false" />
           <Property Name="TINHTRANG" Type="tinyint" Nullable="false" />
+          <Property Name="TIENKHACHTRA" Type="float" />
+          <Property Name="TIENTRALAIKHACH" Type="float" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -98,6 +100,7 @@
           <Property Name="GIOITINH" Type="bit" />
           <Property Name="SDT" Type="varchar" MaxLength="12" />
           <Property Name="NGAYSINH" Type="datetime" />
+          <Property Name="ISNHANVIEN" Type="bit" />
         </EntityType>
         <Association Name="FK_CTHOADON_MAHANG">
           <End Role="HANG" Type="Self.HANG" Multiplicity="1" />
@@ -172,7 +175,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_HOADON_MANHANVIEN">
-          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
           <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NHANVIEN">
@@ -293,11 +296,13 @@
             <PropertyRef Name="MAHOADON" />
           </Key>
           <Property Name="MAHOADON" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="MANHANVIEN" Type="Int64" />
+          <Property Name="MANHANVIEN" Type="Int64" Nullable="false" />
           <Property Name="MAKH" Type="Int64" />
-          <Property Name="TONGTIEN" Type="Double" />
+          <Property Name="TONGTIEN" Type="Double" Nullable="false" />
           <Property Name="NGAYLAP" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="TINHTRANG" Type="Byte" Nullable="false" />
+          <Property Name="TIENKHACHTRA" Type="Double" />
+          <Property Name="TIENTRALAIKHACH" Type="Double" />
           <NavigationProperty Name="CTHOADON" Relationship="Self.FK_CTHOADON_MAHOADON" FromRole="HOADON" ToRole="CTHOADON" />
           <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_HOADON_MAKH" FromRole="HOADON" ToRole="KHACHHANG" />
           <NavigationProperty Name="NHANVIEN" Relationship="Self.FK_HOADON_MANHANVIEN" FromRole="HOADON" ToRole="NHANVIEN" />
@@ -369,6 +374,7 @@
           <Property Name="GIOITINH" Type="Boolean" />
           <Property Name="SDT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
           <Property Name="NGAYSINH" Type="DateTime" Precision="3" />
+          <Property Name="ISNHANVIEN" Type="Boolean" />
           <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_KHACHHANG_MATAIKHOAN" FromRole="TAIKHOAN" ToRole="KHACHHANG" />
           <NavigationProperty Name="NHANVIEN" Relationship="Self.FK_NHANVIEN_MATAIKHOAN" FromRole="TAIKHOAN" ToRole="NHANVIEN" />
         </EntityType>
@@ -445,7 +451,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_HOADON_MANHANVIEN">
-          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
           <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NHANVIEN">
@@ -566,6 +572,8 @@
                 <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
                 <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
                 <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+                <ScalarProperty Name="TIENKHACHTRA" ColumnName="TIENKHACHTRA" />
+                <ScalarProperty Name="TIENTRALAIKHACH" ColumnName="TIENTRALAIKHACH" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -634,6 +642,7 @@
                 <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
                 <ScalarProperty Name="SDT" ColumnName="SDT" />
                 <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+                <ScalarProperty Name="ISNHANVIEN" ColumnName="ISNHANVIEN" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -1,15 +1,36 @@
-f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.GUI.frm_BanHang.resources
-f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.GUI.frm_Home.resources
-f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.Properties.Resources.resources
-f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.csproj.GenerateResource.Cache
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\EntityFramework.dll
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\QuanLyBanHang.mdf
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\QuanLyBanHang_log.ldf
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\QLBanHang.exe.config
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\QLBanHang.exe
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\QLBanHang.pdb
-f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\EntityFramework.dll
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\EntityFramework.SqlServer.dll
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\EntityFramework.xml
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\bin\Debug\EntityFramework.SqlServer.xml
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.GUI.frm_BanHang.resources
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.GUI.frm_Home.resources
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.GUI.frm_KhachHang.resources
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.GUI.frm_TraHang.resources
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.Properties.Resources.resources
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.csproj.GenerateResource.Cache
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.exe
 f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.pdb
+f:\onedrive\documents\visual studio 2013\Projects\QLBanHang\QLBanHang\obj\Debug\QLBanHang.csprojResolveAssemblyReference.cache
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\QLBanHang.exe.config
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.exe
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.pdb
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.csprojResolveAssemblyReference.cache
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.GUI.frm_BanHang.resources
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.GUI.frm_Home.resources
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.GUI.frm_KhachHang.resources
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.GUI.frm_TraHang.resources
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.Properties.Resources.resources
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\obj\Debug\QLBanHang.csproj.GenerateResource.Cache
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\QuanLyBanHang.mdf
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\QuanLyBanHang_log.ldf
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\QLBanHang.exe
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\QLBanHang.pdb
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\EntityFramework.dll
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\EntityFramework.xml
+C:\Users\HUU DUC\Desktop\Project\banhangcs\QLBanHang\bin\Debug\EntityFramework.SqlServer.xml

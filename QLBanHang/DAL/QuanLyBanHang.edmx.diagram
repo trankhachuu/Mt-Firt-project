@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="97600c0b813748a1a41cbe5d7e88ff61" Name="Diagram1">
+      <Diagram DiagramId="3868120d443845fdb5ecc774cf0a7a4e" Name="Diagram1">
         <EntityTypeShape EntityType="QuanLyBanHangModel.CTHOADON" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyBanHangModel.HANG" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyBanHangModel.HOADON" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyBanHangModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.HOADON" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyBanHangModel.KHO" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyBanHangModel.KHUYENMAI" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyBanHangModel.LOAIHANG" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyBanHangModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyBanHangModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="19.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyBanHangModel.TAIKHOAN" Width="1.5" PointX="1.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.TAIKHOAN" Width="1.5" PointX="1.5" PointY="15.375" IsExpanded="true" />
         <AssociationConnector Association="QuanLyBanHangModel.FK_CTHOADON_MAHANG" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLyBanHangModel.FK_CTHOADON_MAHOADON" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLyBanHangModel.FK_HANG_MAKHO" ManuallyRouted="false" />

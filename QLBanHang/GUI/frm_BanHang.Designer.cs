@@ -46,7 +46,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.infoHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -63,7 +62,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_NhanVien = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
@@ -76,6 +75,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.print_Dialog = new System.Windows.Forms.PrintPreviewDialog();
+            this.print_Document = new System.Drawing.Printing.PrintDocument();
             this.maHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,7 +85,6 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_DSChiTiet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoHoaDonBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -308,6 +308,7 @@
             this.button4.Size = new System.Drawing.Size(76, 33);
             this.button4.TabIndex = 14;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // txt_MaKhach
             // 
@@ -320,6 +321,7 @@
             this.txt_MaKhach.Size = new System.Drawing.Size(188, 30);
             this.txt_MaKhach.TabIndex = 13;
             this.txt_MaKhach.Text = "";
+            this.txt_MaKhach.TextChanged += new System.EventHandler(this.txt_MaKhach_TextChanged);
             // 
             // txtMakhach
             // 
@@ -448,7 +450,7 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cb_NhanVien);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Location = new System.Drawing.Point(2, 0);
             this.groupBox2.Name = "groupBox2";
@@ -458,22 +460,19 @@
             this.groupBox2.Text = "Thông tin nhân viên";
             this.groupBox2.UseCompatibleTextRendering = true;
             // 
-            // comboBox1
+            // cb_NhanVien
             // 
-            this.comboBox1.AllowDrop = true;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 24;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Phương Văn Cường",
-            "Phương Văn QUốc"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(271, 32);
-            this.comboBox1.TabIndex = 0;
+            this.cb_NhanVien.AllowDrop = true;
+            this.cb_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_NhanVien.ForeColor = System.Drawing.Color.DimGray;
+            this.cb_NhanVien.FormattingEnabled = true;
+            this.cb_NhanVien.ItemHeight = 24;
+            this.cb_NhanVien.Location = new System.Drawing.Point(6, 19);
+            this.cb_NhanVien.Name = "cb_NhanVien";
+            this.cb_NhanVien.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cb_NhanVien.Size = new System.Drawing.Size(271, 32);
+            this.cb_NhanVien.TabIndex = 1;
             // 
             // panel5
             // 
@@ -591,6 +590,7 @@
             this.button7.TabIndex = 15;
             this.button7.Text = "Hủy hóa đơn";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -606,6 +606,7 @@
             this.button6.TabIndex = 14;
             this.button6.Text = "Thanh toán và in";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -621,6 +622,21 @@
             this.button5.TabIndex = 13;
             this.button5.Text = "Thanh toán";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // print_Dialog
+            // 
+            this.print_Dialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.print_Dialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.print_Dialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.print_Dialog.Enabled = true;
+            this.print_Dialog.Icon = ((System.Drawing.Icon)(resources.GetObject("print_Dialog.Icon")));
+            this.print_Dialog.Name = "print_Dialog";
+            this.print_Dialog.Visible = false;
+            // 
+            // print_Document
+            // 
+            this.print_Document.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.print_Document_PrintPage);
             // 
             // maHangDataGridViewTextBoxColumn
             // 
@@ -667,12 +683,11 @@
             this.Name = "frm_BanHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_BanHang";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_BanHang_FormClosing);
             this.Load += new System.EventHandler(this.frm_BanHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grid_DSChiTiet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoHoaDonBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -719,7 +734,7 @@
         private System.Windows.Forms.Button btn_ThemHang;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RichTextBox txt_MaKhach;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_NhanVien;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
@@ -729,12 +744,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.BindingSource infoHoaDonBindingSource;
         private System.Windows.Forms.DataGridView grid_DSChiTiet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maHang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenHangDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn thanhTienDataGridViewTextBoxColumn;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.DataGridViewTextBoxColumn maHangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -744,5 +754,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewButtonColumn xoaTruong;
         private System.Windows.Forms.BindingSource infoHoaDonBindingSource1;
+        private System.Windows.Forms.PrintPreviewDialog print_Dialog;
+        private System.Drawing.Printing.PrintDocument print_Document;
     }
 }

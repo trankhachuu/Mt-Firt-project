@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("001");
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -45,14 +44,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewHoaDonGanDay = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.khoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hổTrợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,9 +68,9 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(3, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 190);
+            this.groupBox1.Size = new System.Drawing.Size(200, 191);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng nhanh";
@@ -85,6 +92,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Thêm hồ sơ khách hàng";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -94,6 +102,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Trả hàng";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -118,9 +127,9 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Location = new System.Drawing.Point(3, 199);
+            this.groupBox2.Location = new System.Drawing.Point(3, 224);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 205);
+            this.groupBox2.Size = new System.Drawing.Size(200, 180);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin nhân viên";
@@ -199,31 +208,31 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listView1);
-            this.groupBox3.Location = new System.Drawing.Point(209, 3);
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox3.Controls.Add(this.listViewHoaDonGanDay);
+            this.groupBox3.Location = new System.Drawing.Point(209, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(512, 401);
+            this.groupBox3.Size = new System.Drawing.Size(495, 377);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tổng quan";
+            this.groupBox3.Text = "Đơn hàng gần đây";
             // 
-            // listView1
+            // listViewHoaDonGanDay
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewHoaDonGanDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.listViewHoaDonGanDay.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader4,
             this.columnHeader3});
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView1.Location = new System.Drawing.Point(6, 18);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(500, 172);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewHoaDonGanDay.Location = new System.Drawing.Point(6, 18);
+            this.listViewHoaDonGanDay.Name = "listViewHoaDonGanDay";
+            this.listViewHoaDonGanDay.Size = new System.Drawing.Size(483, 353);
+            this.listViewHoaDonGanDay.TabIndex = 0;
+            this.listViewHoaDonGanDay.UseCompatibleStateImageBehavior = false;
+            this.listViewHoaDonGanDay.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -247,21 +256,83 @@
             this.columnHeader3.Text = "Thành tiền";
             this.columnHeader3.Width = 120;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chứcNăngToolStripMenuItem,
+            this.khoToolStripMenuItem,
+            this.nhàCungCấpToolStripMenuItem,
+            this.kháchHàngToolStripMenuItem,
+            this.hổTrợToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(838, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // chứcNăngToolStripMenuItem
+            // 
+            this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
+            this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.chứcNăngToolStripMenuItem.Text = "Chức năng ";
+            // 
+            // khoToolStripMenuItem
+            // 
+            this.khoToolStripMenuItem.Name = "khoToolStripMenuItem";
+            this.khoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.khoToolStripMenuItem.Text = "Kho";
+            // 
+            // nhàCungCấpToolStripMenuItem
+            // 
+            this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.nhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp";
+            // 
+            // kháchHàngToolStripMenuItem
+            // 
+            this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
+            // 
+            // hổTrợToolStripMenuItem
+            // 
+            this.hổTrợToolStripMenuItem.Name = "hổTrợToolStripMenuItem";
+            this.hổTrợToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.hổTrợToolStripMenuItem.Text = "Hổ trợ";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(710, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(128, 364);
+            this.panel1.TabIndex = 4;
+            // 
             // frm_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 405);
+            this.ClientSize = new System.Drawing.Size(838, 405);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Home";
+            this.Load += new System.EventHandler(this.frm_Home_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -283,10 +354,17 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewHoaDonGanDay;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem chứcNăngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem khoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nhàCungCấpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hổTrợToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }

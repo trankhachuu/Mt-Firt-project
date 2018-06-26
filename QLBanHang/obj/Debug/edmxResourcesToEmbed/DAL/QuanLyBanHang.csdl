@@ -33,11 +33,13 @@
       <PropertyRef Name="MAHOADON" />
     </Key>
     <Property Name="MAHOADON" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="MANHANVIEN" Type="Int64" />
+    <Property Name="MANHANVIEN" Type="Int64" Nullable="false" />
     <Property Name="MAKH" Type="Int64" />
-    <Property Name="TONGTIEN" Type="Double" />
+    <Property Name="TONGTIEN" Type="Double" Nullable="false" />
     <Property Name="NGAYLAP" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="TINHTRANG" Type="Byte" Nullable="false" />
+    <Property Name="TIENKHACHTRA" Type="Double" />
+    <Property Name="TIENTRALAIKHACH" Type="Double" />
     <NavigationProperty Name="CTHOADON" Relationship="Self.FK_CTHOADON_MAHOADON" FromRole="HOADON" ToRole="CTHOADON" />
     <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_HOADON_MAKH" FromRole="HOADON" ToRole="KHACHHANG" />
     <NavigationProperty Name="NHANVIEN" Relationship="Self.FK_HOADON_MANHANVIEN" FromRole="HOADON" ToRole="NHANVIEN" />
@@ -109,6 +111,7 @@
     <Property Name="GIOITINH" Type="Boolean" />
     <Property Name="SDT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
     <Property Name="NGAYSINH" Type="DateTime" Precision="3" />
+    <Property Name="ISNHANVIEN" Type="Boolean" />
     <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_KHACHHANG_MATAIKHOAN" FromRole="TAIKHOAN" ToRole="KHACHHANG" />
     <NavigationProperty Name="NHANVIEN" Relationship="Self.FK_NHANVIEN_MATAIKHOAN" FromRole="TAIKHOAN" ToRole="NHANVIEN" />
   </EntityType>
@@ -185,7 +188,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_HOADON_MANHANVIEN">
-    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
     <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NHANVIEN">

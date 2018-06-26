@@ -33,6 +33,8 @@
           <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
           <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
           <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+          <ScalarProperty Name="TIENKHACHTRA" ColumnName="TIENKHACHTRA" />
+          <ScalarProperty Name="TIENTRALAIKHACH" ColumnName="TIENTRALAIKHACH" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -101,6 +103,7 @@
           <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
           <ScalarProperty Name="SDT" ColumnName="SDT" />
           <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="ISNHANVIEN" ColumnName="ISNHANVIEN" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

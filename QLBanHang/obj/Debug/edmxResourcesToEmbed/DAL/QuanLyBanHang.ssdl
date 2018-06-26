@@ -27,11 +27,13 @@
       <PropertyRef Name="MAHOADON" />
     </Key>
     <Property Name="MAHOADON" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="MANHANVIEN" Type="bigint" />
+    <Property Name="MANHANVIEN" Type="bigint" Nullable="false" />
     <Property Name="MAKH" Type="bigint" />
-    <Property Name="TONGTIEN" Type="float" />
+    <Property Name="TONGTIEN" Type="float" Nullable="false" />
     <Property Name="NGAYLAP" Type="datetime" Nullable="false" />
     <Property Name="TINHTRANG" Type="tinyint" Nullable="false" />
+    <Property Name="TIENKHACHTRA" Type="float" />
+    <Property Name="TIENTRALAIKHACH" Type="float" />
   </EntityType>
   <EntityType Name="KHACHHANG">
     <Key>
@@ -93,6 +95,7 @@
     <Property Name="GIOITINH" Type="bit" />
     <Property Name="SDT" Type="varchar" MaxLength="12" />
     <Property Name="NGAYSINH" Type="datetime" />
+    <Property Name="ISNHANVIEN" Type="bit" />
   </EntityType>
   <Association Name="FK_CTHOADON_MAHANG">
     <End Role="HANG" Type="Self.HANG" Multiplicity="1" />
@@ -167,7 +170,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_HOADON_MANHANVIEN">
-    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
     <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NHANVIEN">

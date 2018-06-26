@@ -48,5 +48,24 @@ namespace QLBanHang.BUS
             }
             return resLst;
         }
+
+        public bool thanhToan(Dictionary<long , CTHOADON> lst)
+        {
+            try
+            {
+                foreach (CTHOADON item in lst.Values)
+                {
+                    db.CTHOADON.Add(item);
+                }
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        
     }
 }

@@ -117,10 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAShJREFUSEvtlD9KA0EcRjfBSCC4FrY2EZIih7FeELyIjQcQOyFNbmCTFBFbwTaV
+        3sDWExh2fWO+GdHskmLmJwT3wcf83e+RLGzWkoqqqjqa/g1lWeZkTj7IIznRkR1IjsgzvzbAemUux9ND
+        cr9RfiN5rmvpoLuraaMcrnUlDRQeI3oil9qqlbO+0XE89Dnp1ztlXDfJGd/IqY7ioC9IPazr5HdkpK04
+        KNySen7Lk0F3o9QjeaFH4qFzp9TBHfdOx3osDvr+iZQi9+1tpYGkUgdlC3U3Immaj4OH3gNKZxvFNiZS
+        D8WFPD8wlTooH5IXspbTTkp3T9MAogGZWkrPKF4y9rUVYH9iInVQfKW/86FObgbCV4nfyYW2bcHXQXZL
+        zpkfartl38myTxGZAPIADKFkAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAANBJREFUSEvtlM0KgkAYRd3Vrm2L2vuCvkLQo5TStqBtL9IDKFlErRzP4IUIG5Ux
+        IsEDF2XmfkfwLxgZBkVRLElCrsrOGBNqux+SpwjfYC0jC9X8QZLIWYO9WDV/kNzkq8Ferpo/v7iAfaAf
+        YW+jmj94QkRZpXzBWkr6P2QLIvsmxSTHfSHbr8mHDbdizq2IyIGcyV2x53sS2Y7q3WFwQtbkiaAROg+y
+        sjMab4aZGeVTNd4dZo4cptK4oej8NbTBbPt3oa430rhRzxtpRv6GICgBsy05SoTbGMIAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <metadata name="clName_Edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>30</value>
+  <metadata name="thongTinKhachHangBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>
